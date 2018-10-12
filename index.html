@@ -213,7 +213,7 @@
         .rangeRound([500, 860]);
       var color = d3.scaleLinear()
         .domain(d3.range(1, 12))
-        .range(["white", "black"]);
+        .range(["#f2f0f7", "#dadaeb", "#bcbddc", "#9e9ac8", "#756bb1", "#54278f"]);
 
       var promises = [d3.json("https://raw.githubusercontent.com/RosyAzad/D3MultiformVisualization/master/us-10m.json")]
       Promise.all(promises).then(ready)
